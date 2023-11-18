@@ -1,7 +1,7 @@
 // PRACTICE
 import { useRef } from 'react';
 
-import swatchlogo from '../../public/swatch-logo.png';
+import swatchlogo from '../assets/swatch-logo.png';
 
 export default function NavBar() {
 
@@ -235,7 +235,7 @@ export default function NavBar() {
                     width: '10rem'
                 }}
                 className='cursor-pointer' />
-			<nav ref={navRef} className='justify-between'>
+			<nav ref={navRef} style={{ zIndex: '5' }}>
                 {/* <img src={swatchlogo} alt='logo' style={{
                     width: '10rem'
                 }}
@@ -244,17 +244,17 @@ export default function NavBar() {
 				<a href="/#">Blog</a>
 				<a href="/#">About me</a> */}
 
-                <a className='hover:underline cursor-pointer'>New Arrivals</a>
-                <a className='hover:underline cursor-pointer'>Watches</a>
-                <a className='hover:underline cursor-pointer'>Gifts</a>
-                <a className='hover:underline cursor-pointer'>Moonswatch</a>
-                <a className='hover:underline cursor-pointer'>Customize</a>
-                <a className='hover:underline cursor-pointer'>Our World</a>
-                <a className='hover:underline cursor-pointer'>Flik Flak</a>
-                <a className='cursor-pointer'><i className="fa-solid fa-user"></i></a>
-                <a className='cursor-pointer'><i className="fa-solid fa-magnifying-glass"></i></a>
-                <a className='cursor-pointer'><i className="fa-solid fa-heart"></i></a>
-                <a className='cursor-pointer'><i className="fa-solid fa-bag-shopping"></i></a>
+                <a className='hover:underline cursor-pointer py-3'>New Arrivals</a>
+                <a className='hover:underline cursor-pointer py-3'>Watches</a>
+                <a className='hover:underline cursor-pointer py-3'>Gifts</a>
+                <a className='hover:underline cursor-pointer py-3'>Moonswatch</a>
+                <a className='hover:underline cursor-pointer py-3'>Customize</a>
+                <a className='hover:underline cursor-pointer py-3'>Our World</a>
+                <a className='hover:underline cursor-pointer py-3'>Flik Flak</a>
+                <a className='hover:underline cursor-pointer py-3'><i className="fa-solid fa-user"></i></a>
+                <a className='hover:underline cursor-pointer py-3'><i className="fa-solid fa-magnifying-glass"></i></a>
+                <a className='hover:underline cursor-pointer py-3'><i className="fa-solid fa-heart"></i></a>
+                <a className='hover:underline cursor-pointer py-3'><i className="fa-solid fa-bag-shopping"></i></a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
